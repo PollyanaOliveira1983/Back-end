@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+/home/polly/Documentos/DevSuperior/Back end/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
+1969869205.index
+1374614900.index
+1680733060.index
