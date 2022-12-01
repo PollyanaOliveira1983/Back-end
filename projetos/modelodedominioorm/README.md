@@ -22,4 +22,10 @@ blocos de horários (por exemplo: um curso de HTML pode ocorrer em dois blocos, 
 armazenar o dia e os horários de início de fim do bloco daquele dia). Para cada participante, deseja-se
 cadastrar seu nome e email.
 
+![Captura de tela de 2022-12-01 15-22-47](https://user-images.githubusercontent.com/90224120/205134643-9fe273df-19b1-4ef1-bc2d-4415acfb661b.png)
+
+
 Instância dos dados para seeding (próxima página):
+
+![Captura de tela de 2022-12-01 15-22-55](https://user-images.githubusercontent.com/90224120/205134750-bf8467eb-65a6-46bd-b081-543101a02556.png)
+
