@@ -3,8 +3,6 @@ package com.desafiocrud.clientes.entities;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "tb_client")
@@ -20,6 +18,9 @@ public class Client {
     private LocalDate birthDate;
     private  Integer children;
 
+    public Client() {
+
+    }
     public Client(Long id, String name, String cpf, Double income, LocalDate birthDate, Integer children) {
         this.id = id;
         this.name = name;
@@ -27,10 +28,6 @@ public class Client {
         this.income = income;
         this.birthDate = birthDate;
         this.children = children;
-    }
-
-    public Client() {
-
     }
 
     public Long getId() {
