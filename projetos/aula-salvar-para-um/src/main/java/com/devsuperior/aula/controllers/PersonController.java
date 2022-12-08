@@ -1,5 +1,6 @@
 package com.devsuperior.aula.controllers;
 
+import com.devsuperior.aula.dto.PersonDTO;
 import com.devsuperior.aula.dto.PersonDepartmentDTO;
 import com.devsuperior.aula.services.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +18,17 @@ public class PersonController {
 
     @Autowired
     private PersonService service;
-    @PostMapping
+   // @PostMapping
     public ResponseEntity<PersonDepartmentDTO> insert(@RequestBody PersonDepartmentDTO dto) {
+        dto = service.insert(dto);
+        URI uri = ServletUriComponentsBuilder.fromCurrentRequestUri().path("{id}")
+                .buildAndExpand(dto.getId()).toUri();
+        return ResponseEntity.created(uri).body(dto);
+
+    }
+
+    @PostMapping
+    public ResponseEntity<PersonDTO> insert(@RequestBody PersonDTO dto) {
         dto = service.insert(dto);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequestUri().path("{id}")
                 .buildAndExpand(dto.getId()).toUri();
