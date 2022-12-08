@@ -28,12 +28,12 @@ public class ClientDTO {
     }
 
     public ClientDTO(Client client) {
-        id = id;
-        name = name;
-        cpf = cpf;
-        income = income;
-        birthDate = birthDate;
-        children = children;
+        id = client.getId();
+        name = client.getName();
+        cpf = client.getCpf();
+        income = client.getIncome();
+        birthDate = client.getBirthDate();
+        children = client.getChildren();
     }
 
     public Long getId() {
