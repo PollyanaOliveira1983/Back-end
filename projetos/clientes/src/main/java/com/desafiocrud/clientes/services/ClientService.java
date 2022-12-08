@@ -65,9 +65,6 @@ public class ClientService {
         catch (EmptyResultDataAccessException e){
             throw new ResourceNotFoundException("Id não encontrado");
         }
-        catch (DataIntegrityViolationException e) {
-            throw new DatabaseException("Falha de integridade referencial");
-        }
 
     }
 
